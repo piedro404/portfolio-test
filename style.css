@@ -1,0 +1,96 @@
+/* Padrão do Site */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+}
+
+/* Menu */
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+  background-color: #0e0e0e;
+}
+
+header img {
+  width: 100px;
+  margin: 15px 0 5px 0;
+}
+
+header nav {
+  display: flex;
+}
+
+header li a {
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  padding: 1rem 0.5em;
+}
+
+header li a:hover {
+  color: #fff;
+  background-color: #3f88c5;
+}
+
+header li {
+  margin: 0 5px;
+}
+
+header li:first-child {
+  margin-left: 0;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+@media(min-width:900px) {
+  header {
+    flex-direction: row;
+  }
+
+  header img {
+    margin: 0px;
+  }
+
+  header li a {
+    font-size: 30px;
+  }
+}
